@@ -1,0 +1,17 @@
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Logica\bin\Debug\net5.0\Logica.deps.json
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Logica\bin\Debug\net5.0\Logica.dll
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Logica\bin\Debug\net5.0\ref\Logica.dll
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Logica\bin\Debug\net5.0\Logica.pdb
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Logica\bin\Debug\net5.0\Datos.dll
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Logica\bin\Debug\net5.0\Entidad.dll
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Logica\bin\Debug\net5.0\Datos.pdb
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Logica\bin\Debug\net5.0\Entidad.pdb
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Logica\obj\Debug\net5.0\Logica.csprojAssemblyReference.cache
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Logica\obj\Debug\net5.0\Logica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Logica\obj\Debug\net5.0\Logica.AssemblyInfoInputs.cache
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Logica\obj\Debug\net5.0\Logica.AssemblyInfo.cs
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Logica\obj\Debug\net5.0\Logica.csproj.CoreCompileInputs.cache
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Logica\obj\Debug\net5.0\Logica.csproj.CopyComplete
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Logica\obj\Debug\net5.0\Logica.dll
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Logica\obj\Debug\net5.0\ref\Logica.dll
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Logica\obj\Debug\net5.0\Logica.pdb

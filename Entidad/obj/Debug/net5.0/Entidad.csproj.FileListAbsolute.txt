@@ -1,0 +1,12 @@
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Entidad\bin\Debug\net5.0\Entidad.deps.json
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Entidad\bin\Debug\net5.0\Entidad.dll
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Entidad\bin\Debug\net5.0\ref\Entidad.dll
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Entidad\bin\Debug\net5.0\Entidad.pdb
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Entidad\obj\Debug\net5.0\Entidad.csprojAssemblyReference.cache
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Entidad\obj\Debug\net5.0\Entidad.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Entidad\obj\Debug\net5.0\Entidad.AssemblyInfoInputs.cache
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Entidad\obj\Debug\net5.0\Entidad.AssemblyInfo.cs
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Entidad\obj\Debug\net5.0\Entidad.csproj.CoreCompileInputs.cache
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Entidad\obj\Debug\net5.0\Entidad.dll
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Entidad\obj\Debug\net5.0\ref\Entidad.dll
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Entidad\obj\Debug\net5.0\Entidad.pdb

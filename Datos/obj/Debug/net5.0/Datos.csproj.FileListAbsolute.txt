@@ -1,0 +1,15 @@
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Datos\bin\Debug\net5.0\Entidad.dll
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Datos\obj\Debug\net5.0\Datos.csprojAssemblyReference.cache
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Datos\obj\Debug\net5.0\Datos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Datos\obj\Debug\net5.0\Datos.AssemblyInfoInputs.cache
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Datos\obj\Debug\net5.0\Datos.AssemblyInfo.cs
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Datos\bin\Debug\net5.0\Datos.deps.json
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Datos\bin\Debug\net5.0\Datos.dll
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Datos\bin\Debug\net5.0\ref\Datos.dll
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Datos\bin\Debug\net5.0\Datos.pdb
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Datos\bin\Debug\net5.0\Entidad.pdb
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Datos\obj\Debug\net5.0\Datos.csproj.CoreCompileInputs.cache
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Datos\obj\Debug\net5.0\Datos.csproj.CopyComplete
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Datos\obj\Debug\net5.0\Datos.dll
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Datos\obj\Debug\net5.0\ref\Datos.dll
+C:\Users\JULY ROBLES\Documents\PROGRAMACION WEB\Parcial2\Datos\obj\Debug\net5.0\Datos.pdb
