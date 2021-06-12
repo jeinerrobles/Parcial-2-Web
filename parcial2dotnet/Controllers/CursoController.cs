@@ -17,9 +17,11 @@ namespace parcial2dotnet.Controllers
     public class CursoController : ControllerBase
     {
         private readonly CursoService _cursoService;
+        private readonly InscripcionService _InscripcionService;
         public CursoController(Parcial2Context context)
         {
             _cursoService = new CursoService(context);
+            _InscripcionService = new InscripcionService(context);
         }
 
 
@@ -31,6 +33,14 @@ namespace parcial2dotnet.Controllers
             return cursos;
         }
 
+        [HttpGet("ConInscripciones")]
+        public IEnumerable<CursoConInscripcionesViewModel> GetCursoInscripciones()
+        {
+            var cursos = _InscripcionService.BuscarCursoConInscripciones().Select(p => new CursoConInscripcionesViewModel(p));
+            return cursos;
+
+
+        }
 
         // POST: api/Curso
         [HttpPost]

@@ -28,5 +28,21 @@ namespace parcial2dotnet.Models
             
         }
     }
+
+    public class CursoConInscripcionesViewModel : CursoInputModel
+    {
+
+        public List<InscripcionCursoViewModel> Inscripcions { get; set; }
+
+
+        public CursoConInscripcionesViewModel(Curso curso)
+        {
+            CursoId = curso.CursoId;
+            Nombre = curso.Nombre;
+            CuposDisponibles = curso.CuposDisponibles;
+            Inscripcions = curso.Inscripcions.Select(p => new InscripcionCursoViewModel(p)).ToList();
+        }
+
+    }
 }
 

@@ -17,23 +17,16 @@ namespace Logica
 
         }
 
-        public void ActualizarCantidadCupos(Curso curso)
-        {
 
-
-            foreach (Inscripcion inscripcion in curso.Inscripcions)
-            {
-                Curso cupoEncontrado = _context.Cursos.Find(inscripcion.CursoId);
-                cupoEncontrado.CuposDisponibles -= 1;
-                _context.Cursos.Update(cupoEncontrado);
-                _context.SaveChanges();
-            }
-        }
         public GuardarInscripcionResponse GuardarInscripcion(Inscripcion inscripcion)
         {
             try
             {
                 var curso = _context.Cursos.Find(inscripcion.CursoId);
+                Curso cupoEncontrado = _context.Cursos.Find(inscripcion.CursoId);
+                int edad = CalcularEdad(inscripcion.FechaNacimiento);
+                var estudiante = _context.Inscripcions.Find(inscripcion.NumeroIdentificacion);
+
                 if (curso == null)
                 {
                     return new GuardarInscripcionResponse("Error, este curso no se encuentra dentro de los ofertados.");
@@ -43,10 +36,27 @@ namespace Logica
                 {
                     if (curso != null && curso.CuposDisponibles > 0 )
                     {
-                        inscripcion.Curso = curso; // busca el curso de la bd y lo reemplaza por el que estoy haciendo
-                        _context.Inscripcions.Add(inscripcion);
-                        _context.SaveChanges();
-                        return new GuardarInscripcionResponse(inscripcion);
+                        if (estudiante == null)
+                        {
+
+
+                            if (edad >= 12 && edad <= 16)
+                            {
+                                inscripcion.Curso = curso;
+                                cupoEncontrado.CuposDisponibles -= 1;
+                                _context.Inscripcions.Add(inscripcion);
+                                _context.SaveChanges();
+                                return new GuardarInscripcionResponse(inscripcion);
+                            }
+                            else
+                            {
+                                return new GuardarInscripcionResponse("No se pudo registrar porque no tiene la edad requerida.");
+                            }
+                        }
+                        else
+                        {
+                            return new GuardarInscripcionResponse("El estudiante ya esta inscrito en este curso.");
+                        }
                     }
                     else
                     {
@@ -55,11 +65,37 @@ namespace Logica
                   
                 }
 
+
                
             }
             catch (Exception e)
             {
                 return new GuardarInscripcionResponse("Ocurrieron algunos Errores:" + e.Message);
+            }
+        }
+
+        public static int CalcularEdad(DateTime fechaNacimiento)
+        {
+            
+            DateTime fechaActual = DateTime.Today;
+
+         
+            if (fechaNacimiento > fechaActual)
+            {
+                Console.WriteLine("La fecha de nacimiento es mayor que la actual.");
+                return -1;
+            }
+            else
+            {
+                int edad = fechaActual.Year - fechaNacimiento.Year;
+
+               
+                if (fechaNacimiento.Month > fechaActual.Month)
+                {
+                    --edad;
+                }
+
+                return edad;
             }
         }
 
@@ -72,23 +108,16 @@ namespace Logica
             }
             catch (Exception e)
             {
-                return new ConsultarInscripcionResponse("Ocurriern algunos Errores:" + e.Message);
+                return new ConsultarInscripcionResponse("Ocurrieron algunos Errores:" + e.Message);
             }
         }
 
-        public ConsultarCursoResponse BuscarCursoConInscripciones()
+        public List<Curso> BuscarCursoConInscripciones()
         {
-            try
-            {
-                var tercero = _context.Cursos.Include(t => t.Inscripcions).ToList();
-               
-                    return new ConsultarCursoResponse(tercero);
-               
-            }
-            catch (Exception e)
-            {
-                return new ConsultarCursoResponse("Ocurriern algunos Errores:" + e.Message);
-            }
+            
+                List<Curso> cursos = _context.Cursos.Include(t => t.Inscripcions).ToList();
+                return cursos;
+          
         }
 
     }
