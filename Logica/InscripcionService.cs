@@ -24,9 +24,8 @@ namespace Logica
             {
                 var curso = _context.Cursos.Find(inscripcion.CursoId);
                 Curso cupoEncontrado = _context.Cursos.Find(inscripcion.CursoId);
-                int edad = CalcularEdad(inscripcion.FechaNacimiento);
-                var estudiante = _context.Inscripcions.Find(inscripcion.NumeroIdentificacion);
-
+                var edad = CalcularEdad(inscripcion.FechaNacimiento);
+             
                 if (curso == null)
                 {
                     return new GuardarInscripcionResponse("Error, este curso no se encuentra dentro de los ofertados.");
@@ -36,10 +35,7 @@ namespace Logica
                 {
                     if (curso != null && curso.CuposDisponibles > 0 )
                     {
-                        if (estudiante == null)
-                        {
-
-
+                        
                             if (edad >= 12 && edad <= 16)
                             {
                                 inscripcion.Curso = curso;
@@ -50,23 +46,17 @@ namespace Logica
                             }
                             else
                             {
-                                return new GuardarInscripcionResponse("No se pudo registrar porque no tiene la edad requerida.");
+                                return new GuardarInscripcionResponse("El estudiante debe tener entre 12 a 16 años.");
                             }
-                        }
-                        else
-                        {
-                            return new GuardarInscripcionResponse("El estudiante ya esta inscrito en este curso.");
-                        }
+                        
                     }
                     else
                     {
-                        return new GuardarInscripcionResponse("No se pudo registrar porque no quedaron cupos para este curso.");
+                        return new GuardarInscripcionResponse("Ya no hay cupos para este curso.");
                     }
                   
                 }
 
-
-               
             }
             catch (Exception e)
             {
