@@ -13,7 +13,8 @@ namespace Entidad
         public string CursoId { get; set; }
         public string Nombre { get; set; }
         public int CuposDisponibles { get; set; }
-        
+        public List<Inscripcion> Inscripcions { get; set; }
+
 
     }
 }
